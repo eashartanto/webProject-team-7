@@ -1,0 +1,34 @@
+main figure {
+  clear: both;
+}
+
+main figure.cover img {
+  width: 100%;
+}
+
+main figure img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  main figure img {
+    width: 400px;
+    height: 270px;
+  }
+
+  main figure.right {
+    float: right;
+  }
+
+  main figure.left {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 414px) {
+    main figure {
+        margin: 0;
+    }
+}

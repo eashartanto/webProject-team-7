@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>youtube-darkgrey-36</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 28.3329 0 28.3329 20 0 20"></polygon>
+    </defs>
+    <g id="youtube-darkgrey-36" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(4.000000, 8.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path d="M11.2499,14.167 L11.2499,5.834 L18.7499,10 L11.2499,14.167 Z M27.7169,3.225 C27.3919,2.005 26.6789,0.971 25.4579,0.646 C23.2459,0.054 14.1669,0 14.1669,0 C14.1669,0 5.0869,0.054 2.8749,0.646 C1.6539,0.971 0.9459,2.005 0.6169,3.225 C0.0249,5.438 -0.0001,10 -0.0001,10 C-0.0001,10 0.0249,14.563 0.6169,16.775 C0.9409,17.996 1.6539,19.03 2.8749,19.355 C5.0869,19.946 14.1669,20 14.1669,20 C14.1669,20 23.2459,19.946 25.4579,19.355 C26.6789,19.03 27.3919,17.996 27.7169,16.775 C28.3089,14.563 28.3329,10 28.3329,10 C28.3329,10 28.3089,5.438 27.7169,3.225 Z" id="Fill-1" fill="#232424" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

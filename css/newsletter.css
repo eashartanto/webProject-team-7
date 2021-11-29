@@ -1,0 +1,111 @@
+main .main-content {
+    background-color: rgba(35,36,36,.07);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main form .field {
+    margin: auto;
+}
+
+main .main-content .card-list {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 66px;
+}
+
+main .main-content .card-list h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+main .main-content .card-list p {
+    margin: 0;
+    font-size: 14px;
+}
+
+main .field input.field-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    outline: none;
+    width: -webkit-fill-available;
+    margin: 0;
+    padding: 10px;
+    /* margin-bottom: 24px; */
+    font-size: 16px;
+    border: 2px solid #cacaca;
+    background: white;
+    /* max-width: 80% !important; */
+}
+
+main input.field-button {
+    padding: 16px 24px;
+    background: #f61600;
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+main .card-list .card {
+    background: white;
+    border-radius: 4px;
+    width: calc(25% - 32px);
+    margin: 8px 16px;
+    /* margin-bottom: 104px; */
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+main .field input.field-input.error {
+    border: 2px solid red;
+}
+
+.field span.error {
+    color: red;
+    font-size: 12px;
+    height: 16px;
+    display: block;
+}
+
+@media screen and (max-width: 768px) { 
+    main .card-list .card {
+        width: calc(50% - 32px);
+    }
+   
+    main form .field {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    main .card-list .card {
+        width: 100%;
+    }
+        
+    main form .field {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main form .field {
+        width: 500px;
+    }
+}

@@ -1,0 +1,42 @@
+main .card-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+main .card-list .card {
+  width: calc(33% - 48px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 24px;
+  box-shadow: 0px 3px 11px #00000047;
+  min-width: 280px;
+  max-width: 360px;
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+main .card-list .card iframe {
+  width: 100%;
+}
+
+main .card-list .card article {
+  padding: 12px;
+}
+
+main .card-list .card h4.title {
+  clear: right;
+  margin-bottom: 8px;
+}
+
+main .card-list .card span.tag {
+  float: right;
+  padding: 6px;
+  color: #f61600;
+  border: 1px solid;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
