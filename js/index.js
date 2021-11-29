@@ -10,7 +10,7 @@ let validateEmail = () => {
   if (email == "") { //if email is left empty
     $email.classList.add("error");
     $email.nextElementSibling.innerHTML = "Please enter an email address!";
-  } else if (!email.match(emailRegex)) { //if email is invalid
+  } else if (!email.match(emailRegex)) { //if email does not match regex
     $email.classList.add("error");
     $email.nextElementSibling.innerHTML = "Please enter a valid email address!";
   } else {
