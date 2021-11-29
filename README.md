@@ -10,9 +10,8 @@
 - Make page responsive
 - Created a Newsletter page
 - Created a Restaurant blog page
+- Added JS to Newsletter page to validate user email
 
-## Learning Curve and Challenges
-- Used iframes to embed Youtube videos
 
 ## Resources
-HTML, CSS
+HTML, CSS and JavaScript
