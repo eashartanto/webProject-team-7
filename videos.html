@@ -13,9 +13,6 @@
     <header class="header-container">
         <figure class="logo">
             <img src="/assets/images/logo.svg" alt="logo">
-            <!-- <figcaption>
-                <p class="logo">toronto <br> <span>today.</span></p>
-            </figcaption> -->
         </figure>
         <nav class="header-nav-items">
             <a href="hotspots.html">Hot Spots</a>
@@ -29,9 +26,19 @@
     <main>
         <h2 class="page-title">Videos</h2>
         <p>Your inspiration for places to eat and things to do in Toronto. Plus news events and more. New videos posted daily.</p>
+        <div class="filters" id="filters">
+            <label for="filter-videos">Filters: </label> <br>
+            <select name="filter-videos" id="filter-videos" onchange="filterVideos(this.value)">
+                <option value="all" selected>All</option>
+                <option value="eat me">Eat me</option>
+                <option value="news">News</option>
+                <option value="hotspots">Hot spots</option>
+                <option value="happenings">Happenings</option>
+            </select>
+        </div>
         <div class="card-list">
             <div class="card">
-                <iframe width="560" height="200" src="https://www.youtube.com/embed/UtPprUWteeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe data-type="eat me" width="560" height="200" src="https://www.youtube.com/embed/UtPprUWteeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <article>
                     <span class="tag">Eat Me</span>
                     <h4 class="title">
@@ -40,7 +47,7 @@
                 </article>
             </div>
             <div class="card">
-                <iframe width="560" height="200" src="https://www.youtube.com/embed/PNqcAycQ7bk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                <iframe data-type="happenings" width="560" height="200" src="https://www.youtube.com/embed/PNqcAycQ7bk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                 <article>
                     <span class="tag">Happenings</span>
                     <h4 class="title">
@@ -49,7 +56,7 @@
                 </article>
             </div>
             <div class="card">
-                <iframe width="560" height="200" src="https://www.youtube.com/embed/mm1cEFAuLb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                <iframe data-type="news" width="560" height="200" src="https://www.youtube.com/embed/mm1cEFAuLb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                 <article>
                     <span class="tag">News</span>
                     <h4 class="title">
@@ -58,7 +65,7 @@
                 </article>
             </div>
             <div class="card">
-                <iframe width="560" height="200" src="https://www.youtube.com/embed/9HsGB5KKksQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                <iframe data-type="hotspots" width="560" height="200" src="https://www.youtube.com/embed/9HsGB5KKksQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                 <article>
                     <span class="tag">Hot Spots</span>
                     <h4 class="title">
@@ -67,7 +74,7 @@
                 </article>
             </div>
             <div class="card">
-                <iframe width="560" height="200" src="https://www.youtube.com/embed/fShxDCzwwbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                <iframe data-type="hotspots" width="560" height="200" src="https://www.youtube.com/embed/fShxDCzwwbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                 <article>
                     <span class="tag">Hot Spots</span>
                     <h4 class="title">
@@ -76,7 +83,7 @@
                 </article>
             </div>
             <div class="card">
-                <iframe width="560" height="200" src="https://www.youtube.com/embed/Em4rquCVq2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                <iframe data-type="eat me" width="560" height="200" src="https://www.youtube.com/embed/Em4rquCVq2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                 <article>
                     <span class="tag">Eat Me</span>
                     <h4 class="title">
@@ -85,7 +92,7 @@
                 </article>
             </div>
             <div class="card">
-                <iframe width="560" height="200" src="https://www.youtube.com/embed/ZjsUYuuqvXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                <iframe data-type="hotspots" width="560" height="200" src="https://www.youtube.com/embed/ZjsUYuuqvXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                 <article>
                     <span class="tag">Hot Spots</span>
                     <h4 class="title">
@@ -94,7 +101,7 @@
                 </article>
             </div>
             <div class="card">
-                <iframe width="560" height="200" src="https://www.youtube.com/embed/wHKOaDvF2BA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                <iframe data-type="news" width="560" height="200" src="https://www.youtube.com/embed/wHKOaDvF2BA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                 <article>
                     <span class="tag">News</span>
                     <h4 class="title">
@@ -103,7 +110,7 @@
                 </article>
             </div>
             <div class="card">
-                <iframe width="560" height="200" src="https://www.youtube.com/embed/Sj_np7mrntk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                <iframe data-type="news" width="560" height="200" src="https://www.youtube.com/embed/Sj_np7mrntk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
                 <article>
                     <span class="tag">News</span>
                     <h4 class="title">
@@ -143,5 +150,7 @@
     </div>
         <p class="copyright">&copy; 2021 Toronto Today</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/videos.js"></script>
   </body>
 </html>

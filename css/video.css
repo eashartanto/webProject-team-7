@@ -40,3 +40,8 @@ main .card-list .card span.tag {
   margin-bottom: 8px;
   font-weight: 600;
 }
+
+#filters {
+  display: flex;
+  justify-content: flex-end;
+}
