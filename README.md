@@ -11,7 +11,8 @@
 - Created a Newsletter page
 - Created a Restaurant blog page
 - Added JS to Newsletter page to validate user email
+- Added filters to Videos page
 
 
 ## Resources
-HTML, CSS and JavaScript
+HTML, CSS, JavaScript, JQuery
