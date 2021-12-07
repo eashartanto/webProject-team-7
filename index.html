@@ -17,12 +17,10 @@
             </a>
         </figure>
         <nav class="header-nav-items">
-            <a href="">Culture</a>
-            <a href="">Raccoons</a>
-            <a href="hotspots.html">Hot Spots</a>
-            <a href="">Style</a>
+            <a href="index.html">Articles</a>
             <a href="">Events</a>
             <a href="videos.html">Videos</a>
+            <a href="search.html">Search</a>
         </nav>
     </header>
     <main>
@@ -30,80 +28,14 @@
             <h1>Trending</h1>
             <div class="break"></div>
             <p>Keep up with the latest news and trends of the energy-packed city of Toronto.</p>
-            <div class="article-wrapper">
-                <div class="trending article" onclick="location.href='https://www.mercurynews.com/2021/10/04/marauding-gang-of-raccoons-at-large-in-union-city/';">
-                    <div>
-                        <img src="assets/images/raccoon1.jpeg" />
-                        <p class="article-date">5 October 2021</p>
-                        <p class="article-title">Marauding gang of raccoons at large in Toronto</p>
-                    </div>
-                </div>
-                <div class="trending article" onclick="location.href='https://www.mercurynews.com/2021/10/04/marauding-gang-of-raccoons-at-large-in-union-city/';">
-                    <div>
-                        <img src="assets/images/raccoon2.jpeg" />
-                        <p class="article-date">3 October 2021</p>
-                        <p class="article-title">A shocking tale about raccoons</p>
-                    </div>
-                </div>
-                <div class="trending article" onclick="location.href='https://www.mercurynews.com/2021/10/04/marauding-gang-of-raccoons-at-large-in-union-city/';">
-                    <div>
-                        <img src="assets/images/raccoon3.jpeg" />
-                        <p class="article-date">29 September 2021</p>
-                        <p class="article-title">Raccoons attack two people, pets in Downtown</p>
-                    </div>
-                </div>
-            </div>
+            <div class="article-wrapper" id="trending-topic"></div>
             <h1>Topics</h1>
             <div class="break"></div>
             <p>In case you're looking for something in particular.</p>
             <h2>Raccoons</h2>
-            <div class="article-wrapper">
-                <div class="trending article" onclick="location.href='https://www.mercurynews.com/2021/10/04/marauding-gang-of-raccoons-at-large-in-union-city/';">
-                    <div>
-                        <img src="assets/images/raccoon1.jpeg" />
-                        <p class="article-date">5 October 2021</p>
-                        <p class="article-title">Marauding gang of raccoons at large in Toronto</p>
-                    </div>
-                </div>
-                <div class="trending article" onclick="location.href='https://www.mercurynews.com/2021/10/04/marauding-gang-of-raccoons-at-large-in-union-city/';">
-                    <div>
-                        <img src="assets/images/raccoon2.jpeg" />
-                        <p class="article-date">3 October 2021</p>
-                        <p class="article-title">A shocking tale about raccoons</p>
-                    </div>
-                </div>
-                <div class="trending article" onclick="location.href='https://www.mercurynews.com/2021/10/04/marauding-gang-of-raccoons-at-large-in-union-city/';">
-                    <div>
-                        <img src="assets/images/raccoon3.jpeg" />
-                        <p class="article-date">29 September 2021</p>
-                        <p class="article-title">Raccoons attack two people, pets in Downtown</p>
-                    </div>
-                </div>
-            </div>
-            <h2>Landmarks</h2>
-            <div class="article-wrapper">
-                <div class="trending article" onclick="location.href='https://www.mercurynews.com/2021/10/04/marauding-gang-of-raccoons-at-large-in-union-city/';">
-                    <div>
-                        <img src="assets/images/raccoon1.jpeg" />
-                        <p class="article-date">5 October 2021</p>
-                        <p class="article-title">Marauding gang of raccoons at large in Toronto</p>
-                    </div>
-                </div>
-                <div class="trending article" onclick="location.href='https://www.mercurynews.com/2021/10/04/marauding-gang-of-raccoons-at-large-in-union-city/';">
-                    <div>
-                        <img src="assets/images/raccoon2.jpeg" />
-                        <p class="article-date">3 October 2021</p>
-                        <p class="article-title">A shocking tale about raccoons</p>
-                    </div>
-                </div>
-                <div class="trending article" onclick="location.href='https://www.mercurynews.com/2021/10/04/marauding-gang-of-raccoons-at-large-in-union-city/';">
-                    <div>
-                        <img src="assets/images/raccoon3.jpeg" />
-                        <p class="article-date">29 September 2021</p>
-                        <p class="article-title">Raccoons attack two people, pets in Downtown</p>
-                    </div>
-                </div>
-            </div>
+            <div class="article-wrapper" id="raccoons-topic"></div>
+            <h2>Hot Spots</h2>
+            <div class="article-wrapper" id="hotspots-topic"></div>
         </div>
     </main>
     <footer class="footer-container">
@@ -136,5 +68,6 @@
         </div>
         <p class="copyright">&copy; 2021 Toronto Today</p>
     </footer>
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>
