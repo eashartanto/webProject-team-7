@@ -5,6 +5,7 @@ const resultsDiv = document.getElementById("search-results");
 function createElement(article) {
     const newElement = document.createElement("div");
     newElement.className = "search-result";
+    newElement.onclick = () => location.href = article.url;
 
     const img = document.createElement("img");
     img.src = article.imageUrl;

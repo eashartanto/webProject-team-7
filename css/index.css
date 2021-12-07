@@ -26,8 +26,9 @@ main {
 .article-wrapper {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: stretch;
+    gap: 40px 40px;
 }
 
 .article {
@@ -42,7 +43,6 @@ main {
     transition: box-shadow 0.3s;
     background-color: white;
     border: 1px solid #ccc;
-    margin-top: 40px;
 }
 
 .article:hover {
