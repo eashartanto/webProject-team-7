@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="This is a Subscription page" />
+    <meta name="keywords" content="Subscription" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription | Toronto Lifestyle</title>
+    <link rel="shortcut icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/subscription.css" />
+</head>
+<header class="header-container">
+    <figure class="logo">
+        <a href="index.html">
+            <img src="assets/images/logo.svg" alt="logo">
+        </a>
+    </figure>
+    <nav class="header-nav-items">
+        <a href="">Culture</a>
+        <a href="">Raccoons</a>
+        <a href="">Restaurants</a>
+        <a href="">Style</a>
+        <a href="">Events</a>
+        <a href="videos.html">Videos</a>
+    </nav>
+</header>
+
+<body> 
+    <main>
+        <h1 class="page-title">Subscription</h1>
+        <div class="break"></div>
+        <p class = "page-subtitle">Support quality journalism and content by getting the best coverage about life in Toronto</p>
+
+        <div class="subscription-list">
+            <div class ="subscription">
+                <h2 id="subheader"> Basic Coverage</h2>
+                <div class="break center"></div>
+                <h1 id="subcontent">$10 </h1>
+                <h3>for your first year</h3>
+                <form action ="subscription_button" method="post">
+                    <input class ="subbutton" type="submit" value ="Subscribe Now">
+                </form>
+                <div class="subpoint">
+                <p>Basic Digital Includes</p>
+                <li>Unlimited access to trusted news</li>
+                <li>Canada's top-rate news websites</li>
+                <li>Subscriber-exclusive events</li>
+                </div>  
+            </div>
+         
+
+            <div class="subscription">
+                <h2 id="subheader"> Standard Coverage</h2>
+                <div class="break center"></div>
+                <h1 id="subcontent">$25 </h1>
+                <h3>for your first year</h3>
+                <form action ="subscription_button" method="post">
+                    <input class ="subbutton" type="submit" value ="Subscribe Now">
+                </form>
+                <div class="subpoint">
+                <p>Basic Digital feature, plus</p>
+                <li>MyLocal content: neighborhood news</li>
+                <li>ePaper(digital copy of Toronto Today</li>
+
+                </div>  
+            </div>
+
+            <div class="subscription">
+                <h2 id="subheader"> Weekly Coverage</h2>
+                <div class="break center"></div>
+                <h1 id="subcontent">$2,99</h1>
+                <h3>per week for your first 52 weeks</h3>
+                <form action ="subscription_button" method="post">
+                    <input class ="subbutton" type="submit" value ="Subscribe Now">
+                </form>
+                <div class="subpoint">
+                <p>All Access Digital features, plus</p>
+                <li>Weekend delivery to your home</li>
+                <li>$50 Amazon eGift card</li>
+                </div>  
+            </div>
+        </div>
+        <div class="register-form">
+            <h2>Want to be informed for promotion? Subscribe now!</h2>
+            <form action="confirm.html" method="get">
+                <div>
+                    <label for="email_address">E-Mail:</label>
+                    <input type="text" name="email_address" id="email_address">
+                    <span>*</span>
+                </div>
+                <div>
+                    <label for="phone">Mobile Phone:</label>
+                    <input type="text" name="phone" id="phone">
+                    <span>*</span>
+                </div>
+                <div>
+                    <label for="country">Country:</label>
+                    <select name="country" id="country">
+                        <option value="">Select a country</option>
+                        <option>USA</option>
+                        <option>Canada</option>
+                        <option>Mexico</option>
+                    </select>
+                    <span>*</span>
+                </div>
+                <div>
+                    <label>Contact me by:</label>
+                    <input type="radio" name="contact" id="text"
+                        value="text" checked>Text
+                    <input type="radio" name="contact" id="email"
+                        value="email">Email
+                    <input type="radio" name="contact" id="none"
+                        value="none">Don't contact me
+                </div>
+                <div>
+                    <label>Terms of Service:</label>
+                    <input type="checkbox" name="terms" id="terms"
+                        value="yes">I accept
+                    <span>*</span>
+                </div>
+                <div>
+                    <label>&nbsp;</label>
+                    <input type="button" id="register" value="Register">
+                    <input type="button" id="reset_form" value="Reset">
+                </div>
+    
+            </form>
+        </div>
+    </main>
+    <script type="module" src="js/subscription.js"></script>
+</body>
+    <footer class="footer-container">
+        <div class="nav-bars">
+            <nav class="left-footer-nav-items">
+                <a href="">About Us</a>
+                <a href="">FAQ</a>
+                <a href="">Newsletters</a>
+                <a class="selected" href="subscription.html">Subscriptions</a>
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+            </nav>
+            <nav class="right-footer-nav-items">
+                <a href="">
+                    <img src="/assets/images/facebook.svg" alt="facebook link">
+                </a>
+                <a href="">
+                    <img src="/assets/images/twitter.svg" alt="twitter link">
+                </a>
+                <a href="">
+                    <img src="/assets/images/tiktok.svg" alt="tiktok link">
+                </a>
+                <a href="">
+                    <img src="/assets/images/youtube.svg" alt="youtube link">
+                </a>
+                <a href="">
+                    <img src="/assets/images/flickr.svg" alt="flickr link">
+                </a>
+            </nav>
+        </div>
+        <p class="copyright">&copy; 2021 Toronto Today</p>
+    </footer>
+</html>

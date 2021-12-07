@@ -1,0 +1,111 @@
+@media only screen and (max-width: 414px) {
+  main {
+      width: 90% !important;
+  }
+
+  main .subscription-list{
+    width: 100% !important;
+  }
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+main h1 {
+  font-size: 4em;
+  margin: 20px 0px;
+}
+
+main .subscription-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+main .subscription-list .subscription {
+  width: calc(33% - 48px);
+  height: 400px;
+  border: 1px solid #4CAF50;
+  border-radius: 4px;
+  box-shadow: 0px 3px 11px #00000047;
+  min-width: 280px;
+  max-width: 360px;
+  overflow: hidden;
+  margin-top: 40px;
+  text-align: center;
+}
+.register-form{
+  border: 1px;
+  margin: 20px;
+  padding: 20px;
+  clear: auto;
+  break-after: always;
+  background-color: silver;
+
+}
+label {
+  display: inline-block;
+  width: 11em;
+  text-align: right;
+}
+input, select {
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+select { width: 13em; }
+span {
+  color: red;
+}
+h1 {
+    margin:  .5em 0 0em;
+    padding-left: 5px;
+}
+
+h3 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 11px;
+  margin: auto;
+  padding: 5px;
+}
+
+div{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.subpoint{
+  font-size: 13px;
+  text-align: justify;
+  margin: 15px;
+}
+.break {
+  width: 100px;
+  border: 1px solid black;
+}
+
+#subheader {
+  text-align: left;
+  margin-bottom: 3px;
+  
+}
+
+.subbutton {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#subcontent{
+  font-style: italic;
+}
