@@ -1,75 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Videos</title>
-    <link rel="shortcut icon" href="assets/favicon.png" />
-    <link rel="stylesheet" href="css/navigation.css" />
-    <link rel="stylesheet" href="css/video.css" />
-  </head>
-  <body>
-    <header class="header-container">
-        <figure class="logo">
-            <a href="index.html">
-                <img src="assets/images/logo.svg" alt="logo">
-            </a>
-        </figure>
-        <nav class="header-nav-items">
-            <a href="index.html">Articles</a>
-            <a href="">Events</a>
-            <a href="videos.html">Videos</a>
-            <a href="search.html">Search</a>
-        </nav>
-    </header>
-    <main>
-        <h2 class="page-title">Videos</h2>
-        <p>Your inspiration for places to eat and things to do in Toronto. Plus news events and more. New videos posted daily.</p>
-        <div class="filters" id="filters">
-            <label for="filter-videos">Filters: </label> <br>
-            <select name="filter-videos" id="filter-videos" onchange="filterVideos(this.value)">
-                <option value="all" selected>All</option>
-                <option value="eat me">Eat me</option>
-                <option value="news">News</option>
-                <option value="hotspots">Hot spots</option>
-                <option value="happenings">Happenings</option>
-            </select>
-        </div>
-        <div class="card-list">
-        </div>
-    </main>
-    <footer class="footer-container">
-        <div class="nav-bars">
-        <nav class="left-footer-nav-items">
-            <a href="">About Us</a>
-            <a href="faqpage.html">FAQ</a>
-            <a href="newsletter.html">Newsletters</a>
-            <a href="subscription.html">Subscriptions</a>
-            <a href="">Terms of Service</a>
-            <a href="">Privacy Policy</a>
-        </nav>
-        <nav class="right-footer-nav-items">
-            <a href="">
-                <img src="/assets/images/facebook.svg" alt="facebook link">
-            </a>
-            <a href="">
-                <img src="/assets/images/twitter.svg" alt="twitter link">
-            </a>
-            <a href="">
-                <img src="/assets/images/tiktok.svg" alt="tiktok link">
-            </a>
-            <a href="">
-                <img src="/assets/images/youtube.svg" alt="youtube link">
-            </a>
-            <a href="">
-                <img src="/assets/images/flickr.svg" alt="flickr link">
-            </a>
-        </nav>
-    </div>
-        <p class="copyright">&copy; 2021 Toronto Today</p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/js/videos.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Videos</title>
+		<link rel="shortcut icon" href="assets/favicon.png" />
+		<link rel="stylesheet" href="css/navigation.css" />
+		<link rel="stylesheet" href="css/video.css" />
+	</head>
+	<body>
+		<header class="header-container">
+			<figure class="logo">
+				<a href="index.html">
+					<img src="assets/images/logo.svg" alt="logo" />
+				</a>
+			</figure>
+			<nav class="header-nav-items">
+				<a href="index.html">Articles</a>
+				<a href="">Events</a>
+				<a href="videos.html">Videos</a>
+				<a href="search.html">Search</a>
+			</nav>
+		</header>
+		<main>
+			<h2 class="page-title">Videos</h2>
+			<p>
+				Your inspiration for places to eat and things to do in Toronto. Plus
+				news events and more. New videos posted daily.
+			</p>
+			<div class="filters" id="filters">
+				<label for="filter-videos">Filters: </label> <br />
+				<select
+					name="filter-videos"
+					id="filter-videos"
+					onchange="filterVideos(this.value)"
+				>
+					<option value="all" selected>All</option>
+					<option value="eat me">Eat me</option>
+					<option value="news">News</option>
+					<option value="hotspots">Hot spots</option>
+					<option value="happenings">Happenings</option>
+				</select>
+			</div>
+			<div class="card-list"></div>
+		</main>
+		<footer class="footer-container">
+			<div class="nav-bars">
+				<nav class="left-footer-nav-items">
+					<a href="">About Us</a>
+					<a href="faqpage.html">FAQ</a>
+					<a href="newsletter.html">Newsletters</a>
+					<a href="subscription.html">Subscriptions</a>
+					<a href="">Terms of Service</a>
+					<a href="">Privacy Policy</a>
+				</nav>
+				<nav class="right-footer-nav-items">
+					<a href="">
+						<img src="/assets/images/facebook.svg" alt="facebook link" />
+					</a>
+					<a href="">
+						<img src="/assets/images/twitter.svg" alt="twitter link" />
+					</a>
+					<a href="">
+						<img src="/assets/images/tiktok.svg" alt="tiktok link" />
+					</a>
+					<a href="">
+						<img src="/assets/images/youtube.svg" alt="youtube link" />
+					</a>
+					<a href="">
+						<img src="/assets/images/flickr.svg" alt="flickr link" />
+					</a>
+				</nav>
+			</div>
+			<p class="copyright">&copy; 2021 Toronto Today</p>
+		</footer>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="/js/videos.js"></script>
+	</body>
 </html>

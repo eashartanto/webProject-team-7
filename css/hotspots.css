@@ -1,34 +1,94 @@
+main {
+	padding: 0;
+}
+
+main .main-body {
+	padding: 16px 24px;
+}
+
 main figure {
-  clear: both;
+	clear: both;
 }
 
 main figure.cover img {
-  width: 100%;
+	width: 100%;
 }
 
 main figure img {
-  width: 100%;
-  height: 270px;
-  object-fit: cover;
+	width: 100%;
+	height: 270px;
+	object-fit: cover;
+}
+
+main .main-body figure img {
+	cursor: pointer;
+}
+
+main .full-body {
+	margin: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #00000099;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+main .full-body figure.navigate,
+main .full-body figure.close {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+main .full-body figure.navigate img,
+main .full-body figure.close img {
+	width: 100%;
+	height: 100%;
+}
+
+main .full-body figure.main-img {
+	width: 70%;
+	max-height: 90%;
+	overflow: hidden;
+}
+
+main .full-body figure.main-img img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	/* max-height: 90%; */
+}
+
+main .full-body figure.close {
+	position: absolute;
+	top: 8px;
+	right: 8px;
 }
 
 @media screen and (min-width: 768px) {
-  main figure img {
-    width: 400px;
-    height: 270px;
-  }
+	main figure img {
+		width: 400px;
+		height: 270px;
+	}
 
-  main figure.right {
-    float: right;
-  }
+	main figure.right {
+		float: right;
+	}
 
-  main figure.left {
-    float: left;
-  }
+	main figure.left {
+		float: left;
+	}
 }
 
 @media screen and (max-width: 414px) {
-    main figure {
-        margin: 0;
-    }
+	main figure {
+		margin: 0;
+	}
+}
+
+.hide {
+	display: none !important;
 }
