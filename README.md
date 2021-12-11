@@ -9,9 +9,10 @@
 - Add header and footer
 - Make page responsive
 - Created a Newsletter page
-- Created a Restaurant blog page
+- Created a Hotspot blog page
 - Added JS to Newsletter page to validate user email
 - Added filters to Videos page
+- Added gallery view to images in blog page
 
 
 ## Resources
