@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/favicon.png" />
-    <link rel="stylesheet" href="css/navigation.css" />
-    <link rel="stylesheet" href="css/search.css" />
-    <title>Toronto Today</title>
-</head>
-<body>
-    <header class="header-container">
-        <figure class="logo">
-            <a href="index.html">
-                <img src="assets/images/logo.svg" alt="logo">
-            </a>
-        </figure>
-        <nav class="header-nav-items">
-            <a href="index.html">Articles</a>
-            <a href="">Events</a>
-            <a href="videos.html">Videos</a>
-            <a href="search.html">Search</a>
-        </nav>
-    </header>
-    <main>
-        <div id="content-wrapper">
-            <div class="search-bar">
-                <form action="/search.html">
-                    <input type="search" id="search" name="q" aria-label="Search through site content">
-                    <input type="submit" value="Search" id="search-button" onclick="updateList()">
-                </form>
-            </div>
-            <div id="search-results"></div>
-        </div>
-    </main>
-    <script type="module" src="/js/search.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="assets/favicon.png" />
+		<link rel="stylesheet" href="css/navigation.css" />
+		<link rel="stylesheet" href="css/search.css" />
+		<title>Toronto Today</title>
+	</head>
+	<body>
+		<header class="header-container">
+			<figure class="logo">
+				<a href="index.html">
+					<img src="assets/images/logo.svg" alt="logo" />
+				</a>
+			</figure>
+			<nav class="header-nav-items">
+				<a href="index.html">Articles</a>
+				<a href="">Events</a>
+				<a href="videos.html">Videos</a>
+				<a href="search.html" class="selected">Search</a>
+			</nav>
+		</header>
+		<main>
+			<div id="content-wrapper">
+				<div class="search-bar">
+					<form action="/search.html">
+						<input
+							type="search"
+							id="search"
+							name="q"
+							aria-label="Search through site content"
+						/>
+						<input
+							type="submit"
+							value="Search"
+							id="search-button"
+							onclick="updateList()"
+						/>
+					</form>
+				</div>
+				<div id="search-results"></div>
+			</div>
+		</main>
+		<script type="module" src="/js/search.js"></script>
+	</body>
 </html>
