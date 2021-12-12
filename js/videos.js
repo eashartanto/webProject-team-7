@@ -1,3 +1,4 @@
+//json to store data for the list of videos
 let videoList = [
 	{
 		src: "https://www.youtube.com/embed/UtPprUWteeo",
@@ -50,18 +51,20 @@ let videoList = [
 	},
 ];
 
+//called when value in dropdown changes
 let filterVideos = (value) => {
 	if (value == "all") {
 		$(".card").show();
 	} else {
 		$(".card").each((i, card) => {
-			let cardType = $(card).find("iframe").data("type");
+			let cardType = $(card).find("iframe").data("type"); //show card if video type matches the filter value else hide the card 
 			if (value == cardType) $(card).show();
 			else $(card).hide();
 		});
 	}
 };
 
+//used to render the cards
 let displayVideoCards = (vList) => {
 	videoCard = "";
 	vList.forEach((val) => {
