@@ -48,6 +48,32 @@
             <p>The trick with controlling wildlife around your house is to be proactive — take preventative steps before there’s a problem. Once raccoons are eating your garbage or living in your attic, it’s hard to get them to change their habits.</p>
             <p>Heimbach has seen every kind of wildlife infestation — raccoons, skunks, bats — and he feels your pain. The animals can do enormous damage to your domicile while setting up housekeeping for themselves.</p>
             <p>“We’re getting more calls than ever before,” said Heimbach in an interview Tuesday. “Calls for raccoons are off the charts.”</p>
+            <div class="break"></div>
+            <form>
+                <h2>See how exposed you are to a raccoon attack</h2>
+                <p>Accomodation type</p>
+                <select id="accomodation-type" name="accomodation-type">
+                    <option value=0>Condo</option>
+                    <option value=1>Detached</option>
+                </select>
+                <p>Accomodation area</p>
+                <select id="accomodation-area" name="accomodation-area">
+                    <option value=0>City center</option>
+                    <option value=1>Outskirts</option>
+                    <option value=2>Outside of Toronto</option>
+                </select>
+                <p>Trees near your house</p>
+                <select id="trees-amount" name="trees-amount">
+                    <option value=0>Few</option>
+                    <option value=1>Many</option>
+                </select>
+                <br><br>
+                <input type="button" value="Calculate" id="calculate-button" onclick=calculateExposure()>
+            </form>
+            <div id="exposure-results">
+                <h2 id="exposure-text"></h2>
+                <p>Please note that the results are approximate and are strictly informative. To properly assess your case, you are advised to contact an expert.</p>
+            </div>
         </div>
     </main>
     <footer class="footer-container">
@@ -80,5 +106,6 @@
         </div>
         <p class="copyright">&copy; 2021 Toronto Today</p>
     </footer>
+    <script src="js/raccoons.js"></script>
 </body>
 </html>
