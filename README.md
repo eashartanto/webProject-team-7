@@ -19,7 +19,7 @@ HTML, CSS, JavaScript, JQuery
 
 ## Name: Andreas Hartanto
 ## Student Number: n01468650
-
+## link: https://heimlichit.github.io/project-andreas-h/
 ## Tasks
 - Pages created: subscription.html, restaurant.html, upcoming.html
 - Added JS to validate user email on subscription page
