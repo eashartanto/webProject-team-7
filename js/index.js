@@ -1,4 +1,4 @@
-import ARTICLES from "/js/articles.js";
+import ARTICLES from "js/articles.js";
 
 const trendingWrapper = document.getElementById("trending-topic");
 const raccoonsWrapper = document.getElementById("raccoons-topic");

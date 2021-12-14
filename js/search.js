@@ -1,4 +1,4 @@
-import ARTICLES from "/js/articles.js";
+import ARTICLES from "js/articles.js";
 
 const resultsDiv = document.getElementById("search-results");
 
