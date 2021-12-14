@@ -1,7 +1,7 @@
-let myImagesArray = ["images/beef-noodle.png","images/chicken-teriyaki.png","images/mustard-chicken.png","images/pasta.png"];
+let myImagesArray = ["assets/images/restaurant-main.jpg","assets/images/chicken-teriyaki.png","assets/images/mustard-chicken.png","assets/images/pasta.png"];
 let ImageNumber = 0;
 let difference = myImagesArray.length -1;
-let delay = 500;
+let delay = 1500;
 
 setInterval("ChangeImages(-1)", delay);
 

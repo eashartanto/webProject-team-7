@@ -1,13 +1,8 @@
-@media only screen and (max-width: 414px) {
-    main {
-        width: 90% !important;
-    }
-
-    .article {
-        width: 100% !important;
-    }
+main img.image-header {
+	clear: both;
+    float: left;
+    width: auto;
 }
-
 h1 {
     font-size: 4em;
     margin: 20px 0px;
@@ -25,18 +20,13 @@ main {
 .article-header{
     display: flex;
     flex-flow: row wrap;
-    /* justify-content: space-around; */
     align-items: stretch;
-}
-.image-header{
-    float: left;
-    width: auto;
 }
 .text-header{
     float: right;
-    width: 48%;
+    width: 100%;
     margin: 10px;
-    height: 400px;
+    height: 100%;
 }
 .page-title{
     font-size: 45px;
@@ -52,9 +42,9 @@ main {
 .article {
     border-radius: 4px;
     box-shadow: 0px 3px 11px #00000047;
-    width: calc(33% - 48px);
-    min-width: 280px;
-    max-width: 360px;
+    width: calc(24% - 48px);
+    min-width: 250px;
+    max-width: 300px;
     overflow: hidden;
     padding: 0px;
     cursor: pointer;
@@ -90,7 +80,8 @@ main {
 .article-subheader{
     color: maroon;
     font-size: 14px;
-    float: center;
+    text-align: center;
+    clear: both;
 }
 .article-smalltitle{
     font-size: 20px;
@@ -103,4 +94,28 @@ main {
     width: 100px;
     border: 1px solid black;
 }
+
+main img.image-header {
+    width: 100%;
+    height: 500px;
+    clear: both;
+}
+
+@media only screen and (min-width: 768px) {
+    main img.image-header {
+		width: 100%;
+	}
+    .article {
+        width: 100% !important;
+    }
+    .article-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    clear: both;
+}
+}
+
+
 

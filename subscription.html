@@ -39,7 +39,7 @@
                 <h1 id="subcontent">$10 </h1>
                 <h3>for your first year</h3>
                 <form action ="subscription_button" method="post">
-                    <input class ="subbutton" type="submit" value ="Subscribe Now">
+                    <input class ="subbutton" type="submit" value ="Subscribe Now" onclick="Subscribe()">
                 </form>
                 <div class="subpoint">
                 <p>Basic Digital Includes</p>
@@ -56,7 +56,7 @@
                 <h1 id="subcontent">$25 </h1>
                 <h3>for your first year</h3>
                 <form action ="subscription_button" method="post">
-                    <input class ="subbutton" type="submit" value ="Subscribe Now">
+                    <input class ="subbutton" type="submit" value ="Subscribe Now" onclick="Subscribe()">
                 </form>
                 <div class="subpoint">
                 <p>Basic Digital feature, plus</p>
@@ -72,7 +72,7 @@
                 <h1 id="subcontent">$2,99</h1>
                 <h3>per week for your first 52 weeks</h3>
                 <form action ="subscription_button" method="post">
-                    <input class ="subbutton" type="submit" value ="Subscribe Now">
+                    <input class ="subbutton" type="submit" value ="Subscribe Now"onclick="Subscribe()">
                 </form>
                 <div class="subpoint">
                 <p>All Access Digital features, plus</p>
@@ -82,53 +82,22 @@
             </div>
         </div>
         <div class="register-form">
-            <h2>Want to be informed for promotion? Subscribe now!</h2>
-            <form action="confirm.html" method="get">
+            <h2>Want to be informed for promotion? Subscribe to our newsletter now!</h2>
+            <form action="confirm.html" method="get" name = "form1">
                 <div>
                     <label for="email_address">E-Mail:</label>
                     <input type="text" name="email_address" id="email_address">
                     <span>*</span>
                 </div>
                 <div>
-                    <label for="phone">Mobile Phone:</label>
-                    <input type="text" name="phone" id="phone">
-                    <span>*</span>
-                </div>
-                <div>
-                    <label for="country">Country:</label>
-                    <select name="country" id="country">
-                        <option value="">Select a country</option>
-                        <option>USA</option>
-                        <option>Canada</option>
-                        <option>Mexico</option>
-                    </select>
-                    <span>*</span>
-                </div>
-                <div>
-                    <label>Contact me by:</label>
-                    <input type="radio" name="contact" id="text"
-                        value="text" checked>Text
-                    <input type="radio" name="contact" id="email"
-                        value="email">Email
-                    <input type="radio" name="contact" id="none"
-                        value="none">Don't contact me
-                </div>
-                <div>
-                    <label>Terms of Service:</label>
-                    <input type="checkbox" name="terms" id="terms"
-                        value="yes">I accept
-                    <span>*</span>
-                </div>
-                <div>
                     <label>&nbsp;</label>
-                    <input type="button" id="register" value="Register">
-                    <input type="button" id="reset_form" value="Reset">
+                    <input type="button" id="register" value="Register" onclick="ValidateEmail(document.form1.email_address)">
                 </div>
     
             </form>
         </div>
     </main>
-    <script type="module" src="js/subscription.js"></script>
+    <script src="js/subscription.js"></script>
 </body>
     <footer class="footer-container">
         <div class="nav-bars">
@@ -137,8 +106,6 @@
                 <a href="faqpage.html">FAQ</a>
                 <a href="newsletter.html">Newsletters</a>
                 <a class="selected" href="subscription.html">Subscriptions</a>
-                <a href="">Terms of Service</a>
-                <a href="">Privacy Policy</a>
             </nav>
             <nav class="right-footer-nav-items">
                 <a href="">
