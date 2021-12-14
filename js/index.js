@@ -3,6 +3,8 @@ import ARTICLES from "/js/articles.js";
 const trendingWrapper = document.getElementById("trending-topic");
 const raccoonsWrapper = document.getElementById("raccoons-topic");
 const hotspotsWrapper = document.getElementById("hotspots-topic");
+const tourismWrapper = document.getElementById("tourism-topic");
+const foodWrapper = document.getElementById("food-topic");
 
 function createArticle(article) {
     const newElement = document.createElement("div");
@@ -35,6 +37,10 @@ function getTopicWrapper(topic) {
             return raccoonsWrapper;
         case "Hot spots":
             return hotspotsWrapper;
+        case "Tourism":
+            return tourismWrapper;
+        case "Food":
+            return foodWrapper;
     }
 }
 
