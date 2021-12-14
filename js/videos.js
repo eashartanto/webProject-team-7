@@ -69,7 +69,7 @@ let displayVideoCards = (vList) => {
 	videoCard = "";
 	vList.forEach((val) => {
 		videoCard += `<div class="card">
-                    <iframe data-type="news" width="560" height="200" src="${val.src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                    <iframe data-type="${val.type}" width="560" height="200" src="${val.src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                     <article>
                         <span class="tag">${val.type}</span>
                         <h4 class="title">${val.title}</h3>
