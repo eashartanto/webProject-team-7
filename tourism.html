@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/tourism.css">
 
     <title>Tourism in Toronto</title>
     <head>
@@ -12,7 +14,7 @@
             <header class="header-container">
                 <figure class="logo">
                     <a href="index.html">
-                        <img src="images/logo.svg" height="50px" alt="logo">
+                        <img src="assets/images/logo.svg" height="50px" alt="logo">
                     </a>
                 </figure>
                 <nav class="header-nav-items">
@@ -52,7 +54,7 @@
                             <p>The distillery district includes  distilled art, dining, shops & 
                                 entertainment with more than 40 boutiques and one-of-a-kind shops.
                                 The Distillery District is a well-known destination for its “best of class” creative businesses.</p>
-                            <img src="images/1D.jpg"  style= "width :100%" />
+                            <img src="assets/images/1D.jpg"  style= "width :100%" />
                            
   
 
@@ -63,7 +65,7 @@
                             <p>The Toronto Islands - also called the Island, or Toronto Island Park 
                                 is located in Lake Ontario, a 13-minute ferry ride from downtown Toronto.
                                 The Island is actually a group of 15 islands inter-connected by pathways and bridges. </p>
-                            <img src="images/islands.jpg"  style= "width:100%"/>
+                            <img src="assets/images/islands.jpg"  style= "width:100%"/>
                             
     
   
@@ -74,30 +76,30 @@
                               The aquarium has 5.7 million litres (1.25 million gallons) of marine and 
                               freshwater habitats from across the world. The exhibits hold more than 
                               20,000 exotic sea and freshwater specimens from more than 450 species. </p>
-                            <img src="images/aquarium.jpg" style= "width :100%" />
+                            <img src="assets/images/aquarium.jpg" style= "width :100%" />
 
                             <h2> THE “TORONTO SIGN” AT NATHAN PHILIPS SQUARE</h2>
                             <p>The 3D Toronto sign, officially the 3D TORONTO sign and commonly known as the Toronto sign, 
                             is an illuminated three-dimensional sign in Nathan Phillips Square in Toronto, Ontario, Canada, that spells the city's name.</p>
-                            <img src="images/sign toronto.jpg" style= "width :100%" />
+                            <img src="assets/images/sign toronto.jpg" style= "width :100%" />
 
                             <h2> CN TOWER </h2>
                                 <p>At a height of 553.33 m (1,815 ft., 5 in), the CN Tower is Canada’s National Tower,
                                      award-winning dining & entertainment destination, and Toronto’s “must-see” for over 4 decades. 
                                      Spectacular views overlooking up to 160km from 3 observation levels. It is the perfect place for entertainment and celebration 
                                      where you can eat award-winning Canadian cuisine.  </p>
-                          <img src="images/cn tower.jpg" style= "width :100%" />
+                          <img src="assets/images/cn tower.jpg" style= "width :100%" />
 
                             <h2>HOCKEY HALL OF FAME</h2>
                             <p>The Hockey Hall of Fame is home of the Stanley Cup and the finest collection of hockey artifacts in the world.
                              Much more than a sports museum, the Hockey Hall of Fame is a vibrant, immersive and interactive celebration of hockey.</p>
-                            <img src="images/hall of fame.jpg" style= "width :100%" />
+                            <img src="assets/images/hall of fame.jpg" style= "width :100%" />
 
                             <h2>ROYAL ONTARIO MUSEUM</h2>
                             <p>The Royal Ontario Museum is a museum of art, world culture and natural history in Toronto, Ontario, Canada.
                              It is one of the largest museums in North America and the largest in Canada. 
                              It attracts more than one million visitors every year, making the ROM the most-visited museum in Canada.</p>
-                            <img src="images/royal ontario museum.jpeg" style= "width :100%" />
+                            <img src="assets/images/royal ontario museum.jpeg" style= "width :100%" />
 
                             <h2>ART GALLERY OF ONTARIO</h2>
                             <p>The Art Gallery of Ontario is an art museum in Toronto.The museum's building complex 
@@ -105,12 +107,12 @@
                                  and the second-largest art museum in Toronto after the Royal Ontario Museum. 
                                  In addition to exhibition spaces, the museum also houses an artist-in-residence office and studio, 
                                  dining facilities, event spaces, gift shop, library and archives, theatre and lecture hall, research centre, and a workshop.</p>
-                            <img src="images/art gallery of ontario.jpg" style= "width :100%" />
+                            <img src="assets/images/art gallery of ontario.jpg" style= "width :100%" />
 
                            
                             <div>
                                 <h3>Images of the City that never sleeps:</h3>
-                            <img src="images/1AGO.jpg" name="slideshow" id="slideshow"  style="width:100%"/>
+                            <img src="assets/images/1AGO.jpg" name="slideshow" id="slideshow"  style="width:100%"/>
                         </div>
                     </main>
 
@@ -118,9 +120,9 @@
     
    
      //Section 1 ------------  declare an array of images
-    let myImagesArray = ["images/islands.jpg", "images/1TS.jpg", "images/2TS.jpg" , "images/3TS.jpg", "images/4TS.jpg", "images/1D.jpg","images/2D.jpg",
-    "images/3D.jpg","images/3R.jpg","images/1CN.jpg","images/1AGO.jpg","images/1HOF.jpg","images/1OM.jpg",
-    "images/1R.jpg" ,"images/1TSS.jpg","images/2AGO.jpg","images/2HOF.jpg","images/2R.jpg","images/3AGO.jpg"];
+    let myImagesArray = ["assets/images/islands.jpg", "assets/images/1TS.jpg", "assets/images/2TS.jpg" ,"assets/images/2D.jpg",
+    "assets/images/3D.jpg","assets/images/3R.jpg","assets/images/1CN.jpg","assets/images/1AGO.jpg","assets/images/1HOF.jpg","assets/images/1OM.jpg",
+    "assets/images/1R.jpg" ,"assets/images/2AGO.jpg","assets/images/2HOF.jpg","assets/images/2R.jpg","assets/images/3AGO.jpg"];
      
     // Section 2 -------------------------------------------------
     //make an automatic slide to display the images
@@ -157,10 +159,37 @@ document.getElementById('slideshow').src = myImagesArray[ImageNumber];
 </script>
 
 
-        
+<footer class="footer-container">
+    <div class="nav-bars">
+<nav class="left-footer-nav-items">
+        <a href="">About Us</a>
+        <a href="">FAQ</a>
+        <a href="">Newsletters</a>
+        <a href="">Subscriptions</a>
+        <a href="">Terms of Service</a>
+       
+      </nav>
 
-                            
-                            <footer>
+      <nav class="right-footer-nav-items">
+        <a href="https://www.facebook.com">
+            <img src="assets/images/facebook.svg" alt="facebook link">
+        </a>
+        <a href="twitter.com">
+            <img src="assets/images/twitter.svg" alt="twitter link">
+        </a>
+        <a href="tiktok.com">
+            <img src="assets/images/tiktok.svg" alt="tiktok link">
+        </a>
+        <a href="youtube.com">
+            <img src="assets/images/youtube.svg" alt="youtube link">
+        </a>
+        <a href="flickr.com">
+            <img src="assets/images/flickr.svg" alt="flickr link">
+        </a>
+    </nav>
+
+
+         <footer>
 
                                 <p class="copyright">&copy; 2021 Toronto Today</p>
                                 </footer>
