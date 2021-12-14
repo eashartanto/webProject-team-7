@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> About Us </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/aboutus.css" />
+    
+    
+    </head>
+    <body>
+
+        <header class="header-container">
+            <figure class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.svg" height="50px"   alt="logo">
+                </a>
+            </figure>
+            <nav class="header-nav-items">
+                <a href="index.html">Articles</a>
+                <a href="upcoming.html">Events</a>
+                <a href="videos.html">Videos</a>
+                <a href="search.html">Search</a>
+            </nav>
+          </header>
+          <main>
+       
+                    <h1>OUR TEAM</h1>
+
+ <p>We are a team of four international Humber College students who started Toronto 
+                            Today as a simple web project. Since we are newcomers to Toronto, we know how hard it may be to adapt
+                            to new environments.Seeing no alternatives to an easy-to-use news and entertainment website 
+                            exclusively covering what's happening in the city that never sleeps, we 
+                            decided to create our own.Now we strive to keep you up to date with all the biggest news
+                            that are happening in the city.</p>
+                           
+            
+
+                <div class="wrapper">
+                    <div class="our_team">
+                       <div class="team team_1">
+                           <div class="team_img">
+                             <img src="assets/images/alex.jpg"  height="250px" alt="" />
+                         </div>
+                         <div class="team_role">Student</div>
+                         
+                            <div class="menu">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                           </div>
+                           
+                           <div class="info">
+                             <h4>Alexander Mikhaylov</h4>
+                             <p>I am an International Student who is currently schooling at Humber College.</p>
+                           </div>
+                       </div>
+                       <div class="team team_2">
+                          <div class="team_img">
+                             <img src="assets/images/elizabeth.JPG"   height="250px" alt="" />
+                         </div>
+                         <div class="team_role">Student</div>
+                         <div class="menu">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                           </div>
+                           
+                           <div class="info">
+                             <h4>Elizabeth Carew</h4>
+                             <p> I am an International Student who is currently schooling at Humber College.</p>
+                           </div>
+                      </div>
+                       <div class="team team_3">
+                         <div class="team_img">
+                             <img src="assets/images/andreas.jpg"   height="250px" alt="" />
+                         </div>
+                         <div class="team_role">Student</div>
+                         <div class="menu">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                           </div>
+                           
+                           <div class="info">
+                             <h4>Andreas Hartanto</h4>
+                             <p>I am an International Student who is currently schooling at Humber College.</p>
+                           </div>
+                      </div>
+                       <div class="team team_4">
+                         <div class="team_img">
+                             <img src="assets/images/swaroop.jpg"  height="250px" alt="" /> 
+                         </div>
+                         <div class="team_role">Student</div>
+                         <div class="menu">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                           </div>
+                           
+                           <div class="info">
+                             <h4>Swaroop Nayak</h4>
+                             <p>I am an International Student who is currently schooling at Humber College.</p>
+                           </div>
+                      </div>
+                  </div>
+                </div>
+                </main>
+                <script>
+                    let menu_items = document.querySelectorAll(".menu");
+                    
+                    
+                    Array.from(menu_items).forEach(function(menu){
+                      menu.addEventListener("click", function(){
+                        this.classList.toggle("active")
+                      });
+                    });
+                    </script>
+   <footer class="footer-container">
+  <div class="nav-bars">
+    <nav class="left-footer-nav-items">
+      <a href="">About Us</a>
+      <a href="">FAQ</a>
+      <a href="">Newsletters</a>
+      <a href="">Subscriptions</a>
+      <a href="">Terms of Service</a>
+      <a href="">Privacy Policy</a>
+    </footer>
+    </nav>
+  </div>
+
+  <nav class="right-footer-nav-items">
+    <a href="https://www.facebook.com">
+        <img src="assets/images/facebook.svg" alt="facebook link">
+    </a>
+    <a href="twitter.com">
+        <img src="assets/images/twitter.svg" alt="twitter link">
+    </a>
+    <a href="tiktok.com">
+        <img src="assets/images/tiktok.svg" alt="tiktok link">
+    </a>
+    <a href="youtube.com">
+        <img src="assets/images/youtube.svg" alt="youtube link">
+    </a>
+    <a href="flickr.com">
+        <img src="assets/images/flickr.svg" alt="flickr link">
+    </a>
+</nav>
+
+  
+
+                
+
+<footer>
+    <p class="copyright">&copy; 2021 Toronto Today</p>
+    </footer>
+                
+                </body>
+                </html>
